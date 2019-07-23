@@ -1,0 +1,31 @@
+
+li a {
+    color: white;
+    margin-top: 20px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 0;
+}
+.navbar-brand {
+    padding-right: 10px;
+    font-family: 'Geostar';
+}
+.carousel {
+    width: 100%;
+    margin: 20px auto;
+}
+body, html {
+    background-color: #2F4550;
+    height: 100%;
+}
+.container-custom{
+    background-color: #586F7C;
+    height: 90%;
+    box-shadow: 0px 10px 20px 20px black;
+}
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: #212529;
+    height: 10%;
+}
