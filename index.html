@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='./styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Geostar&display=swap" rel="stylesheet">
-
     <title>Hello, world!</title>
 </head>
 
@@ -21,8 +20,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!---->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="page-container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">DB Electronics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -46,13 +45,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://via.placeholder.com/900x400.png" alt="First slide">
+                            <img class="d-block w-100 slideImage" src="./lib/img/slideImg1.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://via.placeholder.com/900x400.png" alt="Second slide">
+                            <img class="d-block w-100 slideImage" src="./lib/img/slideIMG2.jpeg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://via.placeholder.com/900x400.png" alt="Third slide">
+                            <img class="d-block w-100 slideImage" src="./lib/img/slideIMG3.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -70,38 +69,89 @@
 
 
         <div class='row'>
+            <h2 class='p-4'><u><b>About Us</b></u></h2>
+            <p class='p-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum purus quam, et ultrices dolor interdum quis. Curabitur id enim fringilla, rhoncus velit eu, bibendum neque. Nam turpis arcu, dignissim nec libero in, ullamcorper consectetur
+                nisl. Duis viverra odio justo. Duis quis mi quam. Nam commodo posuere tellus, ac tristique nibh pulvinar nec. Sed ut arcu vitae dui feugiat dictum. Duis elit enim, fringilla in tellus nec, lacinia accumsan orci. Nullam iaculis ante efficitur
+                ligula tempus sagittis. In libero massa, lacinia vitae eros id, condimentum tristique ex. Phasellus euismod quam ut placerat ullamcorper. Nam erat turpis, faucibus a diam in, euismod placerat orci. Duis tincidunt, arcu ac condimentum tempor,
+                augue enim venenatis justo, at laoreet felis lorem dapibus.
 
         </div>
-
-
-
-
     </div>
+
+
+    
+
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class='row'>
-                <div class='col-md-3'>
+                <div class='col-md-4'>
                     <ul class='footer-ul'>
-                        <li><b>Rewards Programs</b></li>
-                        <li>Plan1</li>
-                        <li>Plan2</li>
-                        <li>Plan3</li>
-                        <li>Plan4</li>
+                        <li><u><b>Rewards Programs</b></u></li>
+                        <a href='#'>
+                            <li>Sign up for rewards!</li>
+                        </a>
+                        <a href='#'>
+                            <li>Shipping Rewards</li>
+                        </a>
+                        <a href='#'>
+                            <li>Member Product Deals</li>
+                        </a>
+                        <a href='#'>
+                            <li>Disclaimer</li>
+                        </a>
                     </ul>
                 </div>
-                <div class='col-md-3'>
+                <div class='col-md-4'>
                     <ul class='footer-ul'>
-                        <li><b>Legal</b></li>
-                        <li>Please</li>
-                        <li>Try</li>
-                        <li>To</li>
-                        <li>Sue</li>
-                        <li>Me</li>
+                        <li><u><b>Legal</b></u></li>
+                        <a href='#'>
+                            <li>Please</li>
+                        </a>
+                        <a href='#'>
+                            <li>Don't</li>
+                        </a>
+                        <a href='#'>
+                            <li>Sue</li>
+                        </a>
+                        <a href='#'>
+                            <li>Me</li>
+                        </a>
                     </ul>
+                </div>
+                <div class='col-md-4'>
+                    <ul class='footer-ul'>
+                        <li><u><b>News</b></u></li>
+                        <a href='#'>
+                            <li>DB Electronics news</li>
+                        </a>
+                        <a href='#'>
+                            <li>Sign up for our Newsletter!</li>
+                        </a>
+                        <a href='#'>
+                            <li>Industry news</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class='row socialMedia'>
+                <div class='col'>
+                    <div class="container">
+                        <div class="row">
+                            <ul class='socialMedia'>
+                                <li><img src='./lib/img/facebook-4-64.ico'></li>
+                                <li><img src='./lib/img/instagram-4-64.ico'></li>
+                                <li><img src='./lib/img/twitter-4-64.ico'></li>
+                                <li><img src='./lib/img/google-plus-4-64.ico'></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    </div>
+
+
 </body>
 
 </html>

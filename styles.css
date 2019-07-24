@@ -1,4 +1,6 @@
-
+p, h2{
+    color: #2c3e50;
+}
 li a {
     color: white;
     margin-top: 20px;
@@ -6,29 +8,82 @@ li a {
     border: 2px solid black;
     margin: 0;
 }
+
 .navbar-brand {
     padding-right: 10px;
     font-family: 'Geostar';
 }
+
 .carousel {
     width: 100%;
     margin: 20px auto;
 }
-body, html {
-    background-color: #2F4550;
-    height: 100%;
+
+html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
 }
-.container-custom{
-    background-color: #586F7C;
-    height: 90%;
-    box-shadow: 0px 10px 20px 20px black;
+
+body {
+    /* background-color: lightgrey; */
+    display: flex;
+    flex: 1;
 }
+
+.container-custom {
+    background-color: #1abc9c;
+    box-shadow: -16px 0px 8px 0px rgba(0,0,0,0.75), 16px 0px 8px 0px rgba(0,0,0,0.75);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     width: 100%;
     margin: 0;
-    background-color: #212529;
-    height: 20%;
+    background-color: #17a2b8;
+    left: 0;
+    bottom: 0;
 }
+
 .footer-ul li {
     color: white;
+}
+
+.socialMedia {
+    display: inherit;
+    list-style: none;
+}
+
+.socialMedia li img {
+    width: 50px;
+    padding: 10px;
+}
+h2, p, li {
+    font-family: Montserrat;
+}
+
+.navbar {
+    background-color: #17a2b8;
+}
+
+.carousel-item {
+    opacity: 1;
+}
+
+.footer-container {
+    padding-top: 20px;
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.carouselExampleIndicators {
+    box-shadow: 9px 10px 21px black;
 }
