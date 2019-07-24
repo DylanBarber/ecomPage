@@ -55,10 +55,13 @@ footer {
 }
 
 .socialMedia {
-    display: inherit;
+    display: flex;
     list-style: none;
 }
-
+.socialMedia-col {
+    display: flex;
+    justify-content: center;
+}
 .socialMedia li img {
     width: 50px;
     padding: 10px;
