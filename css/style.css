@@ -1,0 +1,25 @@
+/* .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+
+ } */
+
+body {
+    height: 100vh;
+    background: rgb(247, 247, 247);
+    background: radial-gradient(circle, rgba(247, 247, 247, 1) 0%, rgba(66, 182, 244, 1) 100%);
+}
+
+.container-bg {
+    background-color: whitesmoke;
+    height: 100vh;
+    box-shadow: -16px 0px 20px 0px #3e4551, 16px 0px 20px 0px #3e4551;
+
+}
+.navbar-brand{
+    font-family: 'Geostar';
+    border: 2px solid white;
+    padding: 2px;
+}
