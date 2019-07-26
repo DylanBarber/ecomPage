@@ -49,17 +49,18 @@
                     </li>
 
                     <!-- Dropdown -->
-                    
+
 
                 </ul>
                 <ul class='navbar-nav sort'>
-                        <li class="nav-item dropdown float-right">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort</a>
-                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Sort by Type</a>
-                                    <a class="dropdown-item" href="#">Sort by Price</a>
-                                </div>
-                            </li>
+                    <li class="nav-item dropdown float-right">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" id='typeSortDropdown'>Sort by Type</a>
+                            <a class="dropdown-item" id='priceSortDropdown'>Sort by Price</a>
+                            <a class="dropdown-item" id='unsortDropdown'>Unsort</a>
+                        </div>
+                    </li>
                 </ul>
                 <!-- Links -->
             </div>
@@ -87,11 +88,11 @@
 
 
 
-        <div class='container container-bg'>
-            <div class='row'>
-                <div class='col-md-4'>
+        <div class='container container-bg productsDiv'>
+            <div class='row sortedProductsRow'>
+                <div data-type="computer" data-price="42.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card computer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -107,7 +108,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Computer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$42.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -116,9 +117,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="computer" data-price="57.66" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card computer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay ">
@@ -134,7 +135,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Computer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$57.66</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -143,9 +144,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="computer" data-price="244.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card computer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -161,7 +162,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Computer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$244.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -170,11 +171,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-            </div>
-            <div class='row'>
-                <div class='col-md-4'>
+                <div data-type="printer" data-price="67.89" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card printer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -190,7 +189,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Printer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$67.89</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -199,9 +198,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="printer" data-price="89.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card printer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -217,7 +216,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Printer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$89.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -226,9 +225,10 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+
+                <div data-type="printer" data-price="98.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card printer">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -244,7 +244,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Printer</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$98.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -253,11 +253,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-            </div>
-            <div class='row'>
-                <div class='col-md-4'>
+                <div data-type="camera" data-price="48.23" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card camera">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -273,7 +271,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Camera</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$48.23</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -282,9 +280,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="camera" data-price="87.82" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card camera">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -300,7 +298,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Camera</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$87.82</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -309,9 +307,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="camera" data-price="24.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card camera">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -327,7 +325,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Camera</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$24.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -336,11 +334,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-            </div>
-            <div class='row'>
-                <div class='col-md-4'>
+                <div data-type="keyboard" data-price="987.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card keyboard">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -356,7 +352,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Keyboard</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$987.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -365,9 +361,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="keyboard" data-price="234.87" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card keyboard">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -383,7 +379,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Keyboard</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$234.87</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -392,9 +388,9 @@
                     </div>
                     <!-- Card -->
                 </div>
-                <div class='col-md-4'>
+                <div data-type="keyboard" data-price="68.99" class='col-md-4 sortClass'>
                     <!-- Card -->
-                    <div class="card keyboard">
+                    <div class="card">
 
                         <!-- Card image -->
                         <div class="view overlay">
@@ -410,7 +406,7 @@
                             <!-- Title -->
                             <h4 class="card-title">Keyboard</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">$68.99</p>
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Check it out!</a>
 
@@ -421,150 +417,151 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
-        <!-- Footer -->
-        <footer class="page-footer font-small stylish-color-dark pt-4 align-items-end">
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4 align-items-end">
 
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
 
-                <!-- Grid row -->
-                <div class="row">
+            <!-- Grid row -->
+            <div class="row">
 
-                    <!-- Grid column -->
-                    <div class="col-md-4 mx-auto">
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
 
-                        <!-- Content -->
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Disclaimer</h5>
-                        <p>DB Electronics is a publicy traded company. Access to the information and the documents contained on this portion of DB Electronics' website is restricted for regulatory reasons.</p>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mx-auto">
-
-                        <!-- Links -->
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Sign up for our Newsletter!</a>
-                            </li>
-                            <li>
-                                <a href="#!">DB News</a>
-                            </li>
-                            <li>
-                                <a href="#!">Industry News</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mx-auto">
-
-                        <!-- Links -->
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Legal</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Please</a>
-                            </li>
-                            <li>
-                                <a href="#!">Don't</a>
-                            </li>
-                            <li>
-                                <a href="#!">Sue</a>
-                            </li>
-                            <li>
-                                <a href="#!">Me</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mx-auto">
-
-                        <!-- Links -->
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Rewards</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Sign up!</a>
-                            </li>
-                            <li>
-                                <a href="#!">Customer Deals</a>
-                            </li>
-                            <li>
-                                <a href="#!">Member Deals</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Disclaimer</h5>
+                    <p>DB Electronics is a publicy traded company. Access to the information and the documents contained on this portion of DB Electronics' website is restricted for regulatory reasons.</p>
 
                 </div>
-                <!-- Grid row -->
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Sign up for our Newsletter!</a>
+                        </li>
+                        <li>
+                            <a href="#!">DB News</a>
+                        </li>
+                        <li>
+                            <a href="#!">Industry News</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Legal</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Please</a>
+                        </li>
+                        <li>
+                            <a href="#!">Don't</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sue</a>
+                        </li>
+                        <li>
+                            <a href="#!">Me</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Rewards</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Sign up!</a>
+                        </li>
+                        <li>
+                            <a href="#!">Customer Deals</a>
+                        </li>
+                        <li>
+                            <a href="#!">Member Deals</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
 
             </div>
-            <!-- Footer Links -->
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
 
 
 
-            <!-- Call to action -->
+        <!-- Call to action -->
 
-            <hr>
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-fb mx-1">
-                        <i class="fab fa-facebook-f"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1">
-                        <i class="fab fa-twitter"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-gplus mx-1">
-                        <i class="fab fa-google-plus-g"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1">
-                        <i class="fab fa-linkedin-in"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-dribbble mx-1">
-                        <i class="fab fa-dribbble"> </i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Social buttons -->
+        <hr>
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                <a href="./index.html"> DBElectronics.com</a>
-            </div>
-            <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="./index.html"> DBElectronics.com</a>
+        </div>
+        <!-- Copyright -->
 
-        </footer>
-        <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
 
 
@@ -590,6 +587,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!--Sorting function-->
+    <script type='text/javascript' src='./js/sort.js'></script>
 </body>
 
 </html>
