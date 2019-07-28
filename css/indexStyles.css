@@ -8,8 +8,9 @@
 
 .slideInnerDiv img {
     display: none;
-    width: 900px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: stretch;
 }
 
 .slideInnerDiv img.activeSlide {
